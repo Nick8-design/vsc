@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>today is sunday 08/10/2023</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+        }
+        /* the selector below targets th elements inside the thead element and td elements inside the tbody element */
+        
+        thead th,
+        tbody td {
+            text-align: center;
+        }
+        /* the selector below targets td elements inside the tfoot element */
+        
+        tfoot td {
+            text-align: right;
+        }
+        
+        th {
+            background-color: green;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: chartreuse;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgb(224, 116, 15);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Last Name </th>
+                <th> Gender </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Rickert </td>
+                <td> Gonnet </td>
+                <td> Male </td>
+            </tr>
+            <tr>
+                <td> Jesica </td>
+                <td> Fortie </td>
+                <td> Female </td>
+            </tr>
+            <tr>
+                <td> Lindon </td>
+                <td> Scarse </td>
+                <td> Male </td>
+            </tr>
+            <tr>
+                <td> Ezechiela </td>
+                <td> Mortlock </td>
+                <td> Female </td>
+            </tr>
+            <tr>
+                <td> Abran </td>
+                <td> Coatts </td>
+                <td> Male </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

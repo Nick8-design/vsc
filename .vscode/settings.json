@@ -1,0 +1,8 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "open-in-browser.default": "Chrome",
+    "editor.accessibilitySupport": "auto",
+    "files.exclude": {
+        "**/Thumbs.db": false
+    }
+}
