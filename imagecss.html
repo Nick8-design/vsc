@@ -1,0 +1,63 @@
+<html><head><style type="text/css">
+img{
+    border-radius: 50px;
+    filter: brightness(150%);
+}
+#centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin:0auto;*/
+    width: 270px;
+    opacity: 0.5;/*redces transparency*0.0-1.0*/
+}
+#resposive{
+    max-width: 100%;
+    height: auto;
+}
+#thumbnail{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 125px;
+}
+.container{
+    position: realative;
+}
+span{
+    position: absolute;top: 5px;left: 8px;
+}
+#text{width: 100%;
+height: auto;opacity: 0.6;}
+.card {
+      box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+      width: 250px;
+      box-sizing: border-box;
+      transition-duration: 1s;
+    }
+    .card > #gil {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0px;
+    }
+    .card > p {
+      font-family: sans-serif;
+      padding: 0px 10px 10px 10px;
+      text-align: center;
+    }
+    .card:hover {
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      width: 270px;
+    }
+</style></head><body>
+    <img src="media/img1.jpg"/>
+    <img id="thumbnail" src="media/img1.jpg"/>
+    <img id="resposive" src="media/img1.jpg"/>
+    <img id="centered" src="media/img7.jpg"/>
+    <div class="container"><img id="resposive" src="media/img4.jpg"/><span>TOP LEFT</span></div>
+    <div class="card">
+        <img id="gil" src="media/img8.jpg" />
+        <p> Description of the image goes here. Try clicking and holding me to see the hover effect. </p>
+      </div>
+</body></html>
