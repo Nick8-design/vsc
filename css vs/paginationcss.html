@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       .pagc{
+        text-align: center;
+       }
+       .pag{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            border: 1px solid blue;
+            border-radius: 8px;
+        }
+        .pag li{
+            display: inline;
+        }
+        .pag a{
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+            padding: 7px 14px;
+            float: left;
+            border-right: 1px solid blue;
+            transition-duration: 1s;
+        }
+        .pag a:hover{
+            background: #0076ff;
+            color: white;
+        }
+        .pag li:last-child{
+            border: none;
+        }
+        .active{
+            color: white !important;
+            background: #0076ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagc">
+    <ul class="pag">
+        <li><a href="#"><</a></li>
+        <li><a href="#" class="active">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">></a></li>
+    </ul></div>
+</body>
+</html>

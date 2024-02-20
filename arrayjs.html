@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<button onclick="stringlength()">Arrays</button>
+<p id="arr"></p>
+<script>
+function stringlength(){
+    const userName=window.prompt("Hello. May i know your name?");
+ const col=["omena","githeri","fulu"];
+
+ col.unshift("foods :")
+ col.push("biriani");
+ col.push("romonde","kimati","chapo");
+
+col.pop();
+col.shift()
+document.getElementById("arr").innerHTML=col+" "+col.length;
+
+
+}
+</script>
+
+
+
+</body>
+
+</html>

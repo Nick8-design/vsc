@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+div.desce span{
+    color: red;
+
+}
+div.child> span{
+    color: violet;
+}
+li#two +li{
+ color: chocolate;   
+}
+li.two ~ li{
+       color: blue; 
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="desce"><span>
+i am am red
+    </span>
+    <p>hello kb <span>am also red</span></p>
+</div>
+<div class="child"><span>
+    i am am red
+        </span>
+        <p>hello kb <span>am also red</span></p>
+    </div>
+
+<ul>
+    <li>one</li>
+    <li id="two">two</li>
+    <li>three</li>
+<li>
+four
+</li></ul>
+<ul>
+    <li>one</li>
+    <li class="two">two</li>
+    <li>three</li>
+<li>
+four
+</li></ul>
+</body>
+</html>

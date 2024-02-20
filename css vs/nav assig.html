@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;  
+        }
+        .nav-bar{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+       
+        
+        .nav-bar a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .nav-bar>ul{
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar>ul>li>a{
+            padding: 10px;
+            background: lightgrey;
+        }
+        .nav-bar>ul>li>a:hover{
+            background: #173459;
+            color: white;
+        }
+        .nav-bar .active{
+            background: #173459;
+            color: white;
+        }
+        .nav-bar>ul>li{
+        float: left;
+        width: 25%;
+        text-align: center;
+        border-right: 1px solid black;
+        }
+        .nav-bar li :last-child{
+            border: none;
+        }
+        
+
+
+
+        .dd{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 10px;
+            display: none;
+        }
+        .dd li{
+           
+        list-style: none;
+       
+        border-right: 1px solid black;
+        }
+       
+        
+        .dd:hover > .dd-content{
+          height: 200px;
+        }
+        .dd-content>a{
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+      
+            <li>
+              
+                <div class="dd">
+                    <button class="dd-btn">Article</button>
+                    <div class="dd-content">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Article</a>
+                        <a href="#">Setting</a>
+                        <p>this is where my dropdown content goes </p>
+                    </div>
+                </div>
+            </li>
+      
+            <li><a href="#">Setting</a></li>
+    </ul>
+      
+    </div>
+   
+</body>
+</html>

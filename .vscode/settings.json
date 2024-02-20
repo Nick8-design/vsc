@@ -4,5 +4,7 @@
     "editor.accessibilitySupport": "auto",
     "files.exclude": {
         "**/Thumbs.db": false
-    }
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
 }

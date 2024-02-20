@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website with Dropdown Navbar</title>
+<style type="text/css">
+    *{
+        box-sizing: border-box;
+    }
+  
+    body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #53f72a;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+padding: 0;
+}
+
+nav li {
+  position: relative;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+ 
+  display: block;
+}
+
+nav a:hover {
+    color: white;
+    background: #903c56;
+}
+nav>ul>li{
+        float: left;
+        width: 25%;
+        text-align: center;
+        border-right: 1px solid black;
+        }
+        .nav-bar li :last-child{
+            border-right: none;
+        }
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  
+  display: none;
+  box-shadow: 0 18px 36px rgba(0,0,0,0.30),0 14px 11px rgba(0,0,0, 0.22);
+}
+
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown a {
+  display: block;
+
+}
+
+nav li:hover .dropdown {
+  display: block;
+ 
+}
+
+#content{
+  background: url(media/img1.jpg);
+  font-size: 28px;
+  color: white;
+  
+}
+
+
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a>
+      <ul class="dropdown">
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        <li><a href="#">Page 4</a></li>
+      </ul>
+    </li>
+    <li><a href="#">School</a>
+      <ul class="dropdown">
+        <li><a href="#">SCI</a></li>
+        <li><a href="#">SEDU</a></li>
+        <li><a href="#">SOBE</a></li>
+        <li><a href="#">SAVET</a></li>
+        <li><a href="#">Medicine</a></li>
+        <li><a href="#">Engineering</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About Us</a>
+      <ul class="dropdown">
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact Us</a>
+      <ul class="dropdown">
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Phone</a></li>
+        <li><a href="#">Address</a></li>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Settings</a>
+      <ul class="dropdown">
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div style="height: 2000px;background: url(media/img4.jpg);"></div>
+
+</body>
+</html>

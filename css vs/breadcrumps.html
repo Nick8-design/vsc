@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+.breadcrumbs{
+    
+    background: #0176ff;
+    padding: 15px;
+}
+.breadcrumbs ul{
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs li{
+    display: inline-block;
+}
+   .breadcrumbs li::before{
+    content: ">";
+    color: yellowgreen;
+    margin: 0 8px;
+   } 
+   .breadcrumbs li:first-child::before{
+    content: "/";
+    color: grey;
+    margin: 0 0;
+   }   
+   .breadcrumbs li>a{
+    color: red;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+   } 
+   .breadcrumbs li:last-child>a{
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+   }
+    </style>
+</head>
+<body>
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="#">Nyumbani</a></li>
+            <li><a href="#">Hudhuma</a></li>
+            <li><a href="#">Vyakula</a></li>
+        </ul>
+    </div>
+</body>
+</html>

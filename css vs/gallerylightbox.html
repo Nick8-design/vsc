@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        .img-container{
+            margin:0 auto;
+            width: 70%;
+            box-shadow: 0 15px 30px rgba(0, 0,0 ,0.30),0 11px 8px rgba(0, 0,0 ,0.22);
+            margin-bottom: 20px;
+            transition-duration: 1s;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .img-decoration{
+            padding: 0 15px 15px 15px;
+            text-align: center;
+        }
+        .img-container:hover{
+            width: 80%;
+            box-shadow: 0 15px 36px rgba(0, 0,0 ,0.30),0 14px 11px rgba(0, 0,0 ,0.22);
+        }
+
+
+
+        .Lgbox{
+    display: table;
+    position: fixed;
+    top: -100%;
+height: 100%;
+left: 0;
+width: 100%;
+background: rgba(0, 0, 0, 0.7);
+transition-duration:1s ;
+}
+.Lgbox:target{
+    top: 0;
+
+}
+.Lgbox-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    top: 10px;
+    right: 10px;
+}
+.Lgbox img{
+    max-width: 100%;
+    height: auto;
+}
+    </style>
+</head>
+<body>
+    <h1>My gallery of css</h1>
+    <div class="gallery">
+<div class="img-container"  id="cont1">
+   <a href="#img1"> <img src="media/img1.jpg" alt=""></a>
+    <p class="img-decoration">am the first pic</p>
+</div>
+<div class="img-container" id="cont2">
+    <a href="#img2"> <img src="media/img2.jpg" alt="" ></a>
+     <p class="img-decoration">am the second pic</p>
+ </div>
+ <div class="img-container"  id="cont3">
+    <a href="#img3"> <img src="media/img3.jpg" alt=""></a>
+     <p class="img-decoration">am the third pic</p>
+ </div>
+ <div class="img-container" id="cont4">
+    <a href="#img4"> <img src="media/img4.jpg" alt="" ></a>
+     <p class="img-decoration">am the fouth pic</p>
+ </div>
+    </div>
+
+    <div class="Lgbox" id="img1">
+        <a href="#" class="close">CLOSE</a>
+        <div class="Lgbox-content">
+            <img src="media/img1.jpg" alt="">
+        </div>
+    </div>
+    <div class="Lgbox" id="img2">
+        <a href="#" class="close">CLOSE</a>
+        <div class="Lgbox-content">
+            <img src="media/img2.jpg" alt="">
+        </div>
+    </div>
+    <div class="Lgbox" id="img3">
+        <a href="#" class="close">CLOSE</a>
+        <div class="Lgbox-content">
+            <img src="media/img3.jpg" alt="">
+        </div>
+    </div>
+    <div class="Lgbox" id="img4">
+        <a href="#" class="close">CLOSE</a>
+        <div class="Lgbox-content">
+            <img src="media/img8.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

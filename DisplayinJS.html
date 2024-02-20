@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="alatdis()">am the sum is </button>
+<p id="sub">the subtraction is done here</p>
+<button onclick="innerdis()">i do subtraction</button>
+<br>
+<br>
+<button onclick="fullwrite()">i do division and clear screenbefore writing</button>
+
+
+
+    <script type="text/javascript">
+        var y=5;
+        var x=6;
+        var sum = x+y;
+        console.log(sum);
+
+function alatdis(){
+    var y=5;
+        var c=88;
+        var w=8;
+        var sum1 = c+w;
+        alert(sum1)
+}
+function innerdis(){
+    var y=5;
+        var c=88;
+        var w=8;
+        var sum1 = c-w;
+      document.getElementById("sub").innerHTML="answer is "+sum1;
+}
+function fullwrite(){
+    
+        var c=88;
+        var w=8;
+        var di = c/w;
+      document.write(di);
+}
+    </script>
+</body>
+</html>

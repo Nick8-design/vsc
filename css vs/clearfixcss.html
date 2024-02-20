@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Play It Yourself</title>
+  <style type="text/css">
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    img {
+      float: right;
+    }
+    div {
+      border: 3px dotted #903C56;
+    }
+  </style>
+</head>
+<body>
+  <h3> Without Clearfix </h3>
+  <div>
+    <img src="media/img1.jpg" />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  
+  <h3> With Clearfix </h3>
+  <div class="clearfix">
+    <img src="media/img1.jpg" />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</body>
+</html>

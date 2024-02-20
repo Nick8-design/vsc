@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<p id="par1"></p>
+<br>
+<p id="par2">Sum wil be printed here</p>
+<button onclick="twopar(87,888)">Add</button>
+    <script>
+        function onepar(str){
+            document.getElementById("par1").innerHTML=str;
+        }
+        function twopar(n1,n2){
+            let sum=n1+n2;
+            document.getElementById("par2").innerHTML=sum;
+        }
+        onepar("tomorrow i have a class at 10am");
+
+
+        
+    </script>
+</body>
+</html>

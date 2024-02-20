@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <style type="text/css">
+
+        #clip{
+            text-overflow: clip;
+            width: 25%;
+            padding: 2px 5px;
+            background: lightgrey;
+
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        #ellipse{
+            text-overflow: ellipsis;
+            width: 25%;
+            padding: 2px 5px;
+            background: lightgrey;
+
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        #text{
+            text-overflow: '$$$';
+            width: 25%;
+            padding: 2px 5px;
+            background: lightgrey;
+
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .wrapn{
+            word-wrap: normal;
+            /*break all,word,keepall*/
+
+        }
+        p{
+            word-wrap: break-word;
+        }
+        p{
+            width: 250px;
+            border: 2px solid;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="clip">the longest hill is in tanzania and kenya border its cold kilimanjaro .second is mt kenya</p>
+    <br><br>
+    <p id="ellipse">psthe longest hill is in tanzania and kenya border its cold kilimanjaro .second is mt kenya</p>
+    <br><br>
+    <p id="text">the longest hill is in tanzania and kenya border its cold kilimanjaro .second is mt kenya</p>
+    <br><br><p class="wrapn">thelongestisnanzaniandenyabordertsoldkilimanjarosecondismtkenya</p>
+    <br><p class="bw">thelongestisnanzaniandenyabordertsoldkilimanjarosecondismtkenya</p>
+    ><br><p id="wrapn">thelongestisnanzaniandenyabordertsoldkilimanjarosecondismtkenya</p>
+
+
+</body>
+</html>

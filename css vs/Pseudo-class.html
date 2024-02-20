@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p:hover{
+            color: indigo;
+            font-size: 28px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+        p{
+            transition-duration: 2s;
+        }
+        a:link{
+            color: purple;
+        }
+        a:visited{
+            color: pink;
+        }
+        a:hover{
+            color: orangered;
+
+        }
+        a:active{
+            color: brown;
+        }
+.true::after{
+    content: "-true";
+    color: yellow;
+
+}
+.false::before{
+    content: "-false";
+    color: rgb(118, 40, 207);
+}
+.true::first-letter{
+    text-decoration: overline;
+    font-size: 250%;
+    color: red;
+}
+p::first-line{
+    background-image: url(media/libMmust.jpg);
+
+}
+p::selection,textarea::selection{
+    color: brown;
+    background-color: black;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <p class="true">When will this be over</p>
+    <p class="false">the current state sucks</p>
+
+    <p>Go to <a href="www.facebook.com">facebook</a></p>
+    <textarea name="" id="" cols="30" rows="10">am on bed at 08:04 on friday</textarea>
+</body>
+</html>

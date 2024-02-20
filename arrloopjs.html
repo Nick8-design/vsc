@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="ra">the major winning number is</p>
+
+<p id="ra1"><input type="text" placeholder="enter ur lucky number"></p>
+<button onclick="luc(0,10)">click to see the winning luck number</button>
+<br>m6n`jm,./
+<p >the number with high chance were</p>
+
+<p id="ra3">the number with high chance were</p>
+
+<p >the number which people choose most are</p>
+
+<p id="ra4">the number with high chance were</p>
+
+    <script>
+       let fruits=["mango","ova","tomato","berry"];
+let no=[2,36,7,8,9];
+       fruits.forEach(function(value ,index,array){
+        document.getElementById("ra").innerHTML +="<p> Index: "+index+" <br>Value: "+value+"</p>";
+       })
+      const no2=no.map(function(value){
+        return value*2;
+      });
+const no3=no.filter(function(value){
+    return value >20;
+});
+
+
+
+      
+      
+      document.getElementById("ra4").innerHTML=no3;
+      document.getElementById("ra3").innerHTML=no2;
+        function luc(min,max){
+            document.getElementById("ra1").innerHTML=
+            Math.floor(Math.random()*(max-min))+min;
+        }
+
+
+    </script>
+</body>
+</html>

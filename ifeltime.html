@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">How old are you? <input type="number" name="age" id="age"></label>
+        <button type="button" id="submit">Submit</button>
+    </form>
+<p id="salamu"></p>
+<label for="">Choose a drink
+    <select name="drinks" id="drinks" onchange="checkPrice()">
+    <option value="Generali">Generali</option>
+    <option value="Vodka">Vodka</option>
+    <option value="Chrome">Chrome</option>
+    <option value="Kali">Kali</option>
+    <option value="Keg">Keg</option>
+    </select>
+</label>
+<p id="price">the price</p>
+
+<script>
+document.getElementById("submit").addEventListener("click",function(){
+    const age= document.getElementById("age").value;
+    if (age>18){
+        alert("you are allowed in dont mess up!");
+        function greeting(){
+
+        const time=new Date().getHours;
+        if (time<11){
+            return "Good morning welcome in.";
+        }
+        else if(time <18 ){
+            return "Good after noon welcome in.";
+        }
+        else{
+            return "Good evening we are closed."
+        }
+        
+        }
+        document.getElementById("salamu").innerHTML=greeting();
+
+    function checkPrice(){
+        const drink=document.getElementById("drinks").value;
+        let amount;
+        switch(drink){
+            case "Generali":
+                amount="Ksh 500"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Vodka":
+                amount="Ksh 800"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Chrome":
+                amount="Ksh 250"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Kali":
+                amount="Ksh 500"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Keg":
+                amount="Ksh 10"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            default:
+                document.getElementById("price").innerHTML="Sorry for the inconviences, "+drink+" is not available ";
+        
+    }
+   
+  
+    }
+}
+    else{
+        alert("You should not be seen around this park")
+    }
+});
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="changetext.js"></script>
+    <script type="text/javascript">
+function changetxt(){
+    document.getElementById("txt").innerHTML="i am in head for fast excecution";
+}
+    </script>
+</head>
+<body>
+
+    <p id="txt">am js script and <button onclick="changetxt()">click it</button></p>
+    <p id="txt1">am js script and <button onclick="changetxt1()">click it</button></p>
+    <p id="txtexternal">am js script and <button onclick="changetxt2()">click it</button></p>
+
+<p>same folder -> script src="js/script.js"/script</p>
+<p>root directory  -> script src="http://www.example.com/js/script.js"/script</p>
+    <script type="text/javascript">
+        function changetxt1(){
+            document.getElementById("txt1").innerHTML="i am in body am highly recommended here for internal joining ";
+        }
+            </script>
+
+
+</body>
+</html>

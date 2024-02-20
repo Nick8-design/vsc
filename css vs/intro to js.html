@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  
+   <p id="demo1"></p> 
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+   <br>
+   <p id="demo"></p>
+   <br>
+   <p id="name"></p>
+   <br>
+   <p id="mean"></p>
+   <br>
+   <button onclick="sam(2,88)">add two number</button>
+   <br>
+ <p id="length"></p>
+<br>
+<button onclick="sayHello()">Click me!</button>
+<p id="result"></p>
+   <script >
+    document.getElementById("demo1").innerHTML="Demonstration";
+    document.getElementById("demo2").innerHTML="JavaScript Statement";
+    document.getElementById("demo3").innerHTML="JavaScript Identifier";
+
+    var a=10;
+    var b=20;
+    var c=a+b;
+    document.getElementById("demo").innerHTML="Value of c: "+c;
+
+var n="hello nick"
+document.getElementById("name").innerHTML="My name is  "+ n;
+
+var a=2;
+var b=6;
+var v=8;
+var n=2;
+var b3=6;
+var v2=8;
+var f=2;
+var b2=6;
+var v3=8;
+var m=40;
+var g=89;
+
+var m=(a+b+v+n+b3+v2+f+v3+m+g)/10;
+document.getElementById("mean").innerHTML="mean is  "+ m;
+
+
+function sayHello(){
+    document.getElementById("result").innerHTML="Hello ma party pipo";
+}
+
+function sam(num1,num2 ){
+   
+    return num1+num2;
+}
+
+var txt="Home";
+document.getElementById("length").innerHTML=txt.length;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="ra">the major winning number is</p>
+
+<p id="ra1"><input type="text" placeholder="enter ur lucky number"></p>
+<button onclick="luc(0,10)">click to see the winning luck number</button>
+    <script>
+        let rand= Math.random();
+        document.getElementById("ra").innerHTML=rand;
+
+        function luc(min,max){
+            document.getElementById("ra1").innerHTML=
+            Math.floor(Math.random()*(max-min))+min;
+        }
+    </script>
+</body>
+</html>

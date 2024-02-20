@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="obj1"></p>
+<button onclick="person.showName()">NAME</button>
+
+<script>
+const banana={
+color:"yellow",
+size:"long",
+quantity:3,
+isSweet:true,
+foods:["cake","flavor","romonde","matoke"]
+};
+
+document.getElementById("obj1").innerHTML="Banana <br/>"+"Color: "+banana.color+"<br/>"+"Size: "+banana.size+"<br/>"+"Quantity: "+banana.quantity+"<br/>"+"Does it taste sweet: "+banana.isSweet+"<br/>"+"It makes: "+banana.foods;
+
+//banana[foods][2]
+const person={
+    fullName:"Wandoe Gladness Dieda",
+    age:25,
+    showName: function(){
+        alert(this.fullName);
+    },
+    showAge: function(){
+        alert(this.age);
+    }
+}
+
+
+const fruits={
+    mango:{
+color:"egg yellow",
+size:"long"
+},
+orange:{
+color:"orange",
+size:"long"
+}}
+document.write(fruits.mango.color);
+</script>
+
+
+
+</body>
+
+</html>

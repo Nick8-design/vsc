@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="obj1"></p>
+<button onclick="stringlength()">Register</button>
+
+<script>
+function stringlength(){
+    const userName=window.prompt("Hello. May i know your name?");
+    const psw=window.prompt("enter your password, "+userName);
+    let pswlength=psw.length;
+    const str="Welcome "+userName+" your "+pswlength+" days visit awaits you";
+
+    alert(str);
+
+}
+</script>
+
+
+
+</body>
+
+</html>

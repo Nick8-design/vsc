@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="">Choose a drink
+        <select name="drinks" id="drinks" onchange="checkPrice()">
+        <option value="Generali">Generali</option>
+        <option value="Vodka">Vodka</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Kali">Kali</option>
+        <option value="Keg">Keg</option>
+        </select>
+    </label>
+    <p id="price">the price</p>
+
+
+    <script>
+        function checkPrice(){
+        const drink=document.getElementById("drinks").value;
+        let amount;
+        switch(drink){
+            case "Generali":
+                amount="Ksh 500"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Vodka":
+                amount="Ksh 800"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Chrome":
+                amount="Ksh 250"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Kali":
+                amount="Ksh 500"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            case "Keg":
+                amount="Ksh 10"
+                document.getElementById("price").innerHTML="The price of "+drink+" is "+amount;
+                break;
+            default:
+                document.getElementById("price").innerHTML="Sorry for the inconviences, "+drink+" is not available ";
+        
+    }
+   
+  
+    }
+    </script>
+</body>
+</html>

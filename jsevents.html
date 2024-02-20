@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="but1">click me</button>
+<br><br>
+    <button onclick="alert('am inline event handler')">click again</button>
+    <br><br>
+    <button onclick="(myfun())">click me also</button>
+    <br><br>
+    <button id="but2">click me to</button>
+    <br><br>
+    <LAbel>Choose a city
+        <select name="city" id="city">
+            <option value="Busia">Busia</option>
+            <option value="Kakamega">Kakamega</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Voi">Voi</option>
+            <option value="Kisumu">Kisumu</option>
+        </select>
+    </LAbel>
+<p >You selected: <span id="sel"></span></p>
+  
+<br>
+
+<p id="mouseover">i change when mouse is on me</p>
+
+<br>
+<textarea name="" id="area" cols="30" rows="10" placeholder="Enter your name"></textarea>
+<p>Hello, <span id="nam"></span></p>
+
+<br>
+<textarea name="" id="focus" cols="30" rows="10" placeholder="Type something"></textarea>
+
+<p>Window width is: <span id="Wwidth"></span></p>
+
+<p>Window hieght is: <span id="hwidth"></span></p>
+    <script>
+        const btn=document.getElementById("but1");
+        const btn1=document.getElementById("but2");
+        btn.onclick=function(){
+alert("i am an event")
+        }
+        function myfun(){
+            alert("hello cake")
+        }
+
+btn1.addEventListener("click",function(){
+    alert("am addeventlister handle")
+});
+    const sele= document.getElementById("city");
+    sele.addEventListener("change",function(){
+        const val=document.getElementById("city").value;
+        document.getElementById("sel").innerHTML=val;
+    });
+    
+    const elem = document.getElementById("mouseover");
+    elem.addEventListener("mouseover",function(){
+        elem.innerHTML="i told you i will change";
+    });
+    const eleme= document.getElementById("area");
+    eleme.addEventListener("keypress",function(){
+        document.getElementById("nam").innerHTML=eleme.value;
+    });
+    const elemen= document.getElementById("focus");
+    elemen.addEventListener("focus",function(){
+        elemen.style.background="lightblue";
+    });
+    elemen.addEventListener("blur",function(){
+        elemen.style.background="white";
+       });
+
+       window.addEventListener("resize",function(){
+        document.getElementById("Wwidth").innerHTML=window.innerWidth;
+        document.getElementById("hwidth").innerHTML=window.innerHeight;
+       });
+    </script>
+</body>
+</html>

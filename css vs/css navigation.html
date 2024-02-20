@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            margin: 0;
+            padding: 0;  
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .nav-bar>ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar>ul>li>a{
+            padding: 10px;
+            background: lightgrey;
+        }
+        .nav-bar>ul>li>a:hover{
+            background: #173459;
+            color: white;
+        }
+        .nav-bar .active{
+            background: #173459;
+            color: white;
+        }
+        .nav-bar li{
+            border-bottom: 1px solid black;
+        }
+        .nav-bar li :last-child{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+        <li><a href="#">Article</a></li>
+       <li><a href="#">Setting</a></li>
+    </ul>
+      
+    </div>
+</body>
+</html>

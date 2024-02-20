@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<button onclick="stringlength()">Register</button>
+<p id="non"></p>
+<script>
+function stringlength(){
+    const userName=window.prompt("Hello. May i know your name?");
+    const psw=window.prompt("enter your password, "+userName);
+    let pswlength=psw.length;
+    const str="Welcome "+userName+" your "+pswlength+" days visit awaits you";
+
+    alert(str);
+
+const inte=Number.isInteger(88);
+const isnan=isNaN(88);
+const passint=parseInt("9 is my favourite number");
+const trim=(678.1236).toFixed(2) ;
+const exp=(678.1236).toExponential(3) ;
+const strin=(678.1236).toString() ;
+
+
+document.getElementById("non").innerHTML=inte+" "+isnan+" "+passint+" "+trim+" "+exp+" "+strin;
+
+
+}
+</script>
+
+
+
+</body>
+
+</html>

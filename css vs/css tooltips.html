@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+  * {
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 30px;
+    text-align: center;
+}
+.toolpit{
+    position: relative;
+   
+
+}
+.toolpit-content{
+    color: white;
+    background: black;
+    padding: 3px;
+    border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 110px;
+    margin-left: -55px;
+    left: 50%;
+    top: -150px;
+
+}
+.toolpit:hover > .toolpit-content{
+    visibility: visible;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<span class="toolpit">i am explaineri am explaineri am explainer
+    <span class="toolpit-content">i explain more on specific</span>
+</span>
+    </div>
+</body>
+</html>

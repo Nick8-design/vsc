@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @keyframes myAnime{
+            from{
+                background-color: gold;
+                top:0px;
+               
+            }
+            to{
+                background-color: green;
+                top: 200px;
+            }
+        }
+        @keyframes myAnime2{
+            1%{
+                background-color: gold;
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                background-color: green;
+                top: 200px;
+                left: 200px;
+            }
+            50%{
+                background-color: red;
+                top: 0px;
+                left: 200px;
+            }
+            75%{
+                background-color: blue;
+                top: 200px;
+                left: 0px;
+            }
+            100%{
+                background-color: green;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    
+        @keyframes myAnime3{
+            1%{
+                background:url(media/img1.jpg);
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                background:url(media/img3.jpg);
+                top: 300px;
+                left: 200px;
+            }
+            50%{
+                background:url(media/img4.jpg);
+                top: 50px;
+                left: 100px;
+            }
+            75%{
+                background:url(media/img5.jpg);
+                top: 280px;
+                right: 0px;
+            }
+            100%{
+                background:url(media/img6.jpg);
+                top: 50px;
+                right: 50px;
+            }
+        }
+        @keyframes myAnime4{
+            from{
+                background: url(media/img9.jpg);
+                left:0px;
+               
+            }
+            to{
+                background: url(media/img5.jpg);
+                left: 900px;
+            }
+        }
+        @keyframes myAnime5{
+            from{
+                background: url(media/img7.jpg);
+                font-size: 30px;
+               
+            }
+            to{
+                background: url(media/img4.jpg);
+                font-size: 60px;
+            }
+        }
+        @keyframes myAnime6{
+            from{
+                background: url(media/img1.jpg);
+                left: 0px;
+               
+            }
+            to{
+                background: url(media/img4.jpg);
+              left: 1100px;
+            }
+        }
+        .div1{
+            animation-name: myAnime;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+        .div2{
+            animation-name: myAnime2;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background:url(media/img2.jpg);
+        }
+        .div3{
+            animation-name: myAnime3;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background:url(media/img8.jpg);
+        }
+        .div4{
+            animation-name: myAnime4;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: normal;/*reverse /alternate /alternate-reverse*/
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background:url(media/img1.jpg);
+        }
+        .p1{
+            animation-name: myAnime5;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-duration: 2s;
+        }
+        .div6{
+            animation: myAnime6 2s linear 1s infinite alternate;
+           
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background:url(media/img6.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <br>
+    <div class="div2"></div>
+    <br>
+    <div class="div3"></div>
+    <br>
+    <div class="div4"></div>
+    <br>
+    <p class="p1">am going to eat</p>
+    <br>
+    <div class="div6"></div>
+</body>
+</html>

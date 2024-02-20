@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+           background: yellow;
+            color: white;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+  <button id="alert">Tap to me to talk</button> 
+
+  <p id="toDisplay"> what is biology</p>
+  <button onclick="myinner()">Change text</button>
+  <br>
+  <br>
+
+  <img src="media/img6.jpg" id="imgtoDisplay">
+  <button onclick="changeimg()">Change image</button>
+  <br>
+  <br>
+  <p id="txt">Name the first image?</p>
+  <button onclick="stylechange()">Change the question style</button>
+<br>
+<br>
+<img src="media/img4.jpg" alt="" id="above"><br>
+<p>Do want to see the image above or hide it</p>
+<button onclick="show()">unhide</button>
+<button onclick="hide()">hide</button>
+
+
+
+
+
+
+    
+    <script type="text/javascript">
+{
+document.getElementById("alert").onclick=function(){
+alert("am an alert message")
+}
+
+function myinner(){
+document.getElementById("toDisplay").innerHTML="what was the question?";
+}
+
+function changeimg(){
+document.getElementById("imgtoDisplay").src="media/img1.jpg";
+}
+
+function stylechange(){
+    document.getElementById("txt").style.color="green";
+  
+    document.getElementById("txt").style.fontSize="300%"; 
+}
+
+function hide(){
+    document.getElementById("above").style.display="none";
+
+}
+
+function show(){
+    document.getElementById("above").style.display="block";
+
+}
+}
+    </script>
+</body>
+</html>
